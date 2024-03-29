@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Машины</title>
+    <meta charset="utf-8" />
+    <style>
+      .blockForm {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 100px;
+      }
+      #car,
+      #year {
+        width: 300px;
+        height: 25px;
+        font-size: 18px;
+      }
+      #submit {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin: 0 auto;
+        background: lightcoral;
+        color: white;
+        font-weight: bold;
+      }
+      input {
+        display: block;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blockForm">
+      <form method="post">
+        <fieldset>
+          <legend style="font-size: 18px; margin-bottom: 30px">
+            Форма добавления в БД!
+          </legend>
+          <input
+            type="text"
+            name="name"
+            id="car"
+            placeholder="Введите имя..."
+          />
+          <input
+            type="number"
+            name="num"
+            id="year"
+            placeholder="Введите номер..."
+          />
+          <input type="submit" value="Добавить запись" id="submit" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
